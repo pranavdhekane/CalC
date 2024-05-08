@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+body{
+    background-color: beige;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-container {
+    width: 55vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+    padding: 1rem 0.1rem ;
+    border-radius: 2vw;
+    border: 1rem solid;
+    border-color: red;
+}
+.btn{
+    width: 20%;
+    height: 10vmin;
+    margin: 0;
+    font-size: 4vmin;
+    background-color: cadetblue;
+    border-radius: 2vmin;
+    margin: 1%;
+    color: #fff;
+}
+.btn:active{
+    border: 3px solid beige;
+}
+.operation {
+    /* width: 45vw; */
+    width: 85%;
+    height: 15vmin;
+    background-color: #7a7a7a;
+    margin: 1.5rem;
+    text-align: right;
+    line-height: 15vmin;
+    font-size: 6vmin;
+    padding: 0 1rem;
+    border-radius: 2vmin;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width : 650px){
+    .btn-container{
+        width: 70%;
+    }
+    .btn{
+        height: 15vmin;
+        font-size: 4vmin;
+    }
+    .operation{
+        height: 25vmin;
+        line-height: 25vmin;
+        font-size: 10vmin;       
+    }
+    
+}
+@media screen and (max-width : 500px){
+    .btn-container{
+        width: 90%;
+    }
+    .btn{
+        height: 18vmin;
+        font-size: 6vmin;
+    }
+    .operation{
+        height: 45vmin;
+        line-height: 45vmin;
+        font-size: 10vmin;       
+    }
+    
+}
